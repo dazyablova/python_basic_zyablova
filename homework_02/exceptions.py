@@ -5,22 +5,22 @@
 - CargoOverload
 """
 
+
 class LowFuelError(Exception):
-    def __init__(self, message):
-        self.message = message
-        super().__init__(self.message)
+    def __init__(self):
+        super().__init__()
+
 
 class NotEnoughFuel(Exception):
-    def __init__(self, message):
-        self.message = message
-        super().__init__(self.message)
+    def __init__(self):
+        super().__init__()
+
 
 class CargoOverload(Exception):
-    def __init__(self, message):
-        self.message = message
-        super().__init__(self.message)
+    def __init__(self):
+        super().__init__()
+
 
 class VehicleNotStartedError(Exception):
-    def __init__(self, message):
-        self.message = message
-        super().__init__(self.message)
+    def __init__(self):
+        super().__init__()
