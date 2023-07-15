@@ -1,6 +1,5 @@
 from base import Vehicle
-from exceptions import CargoOverload
-import exceptions
+from homework_02 import exceptions
 
 """
 создайте класс `Plane`, наследник `Vehicle`
