@@ -1,4 +1,4 @@
-from base import Vehicle
+from homework_02.base import Vehicle
 """
 создайте класс `Car`, наследник `Vehicle`
 """
