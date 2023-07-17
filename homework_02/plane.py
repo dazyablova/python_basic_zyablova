@@ -26,12 +26,4 @@ class Plane(Vehicle):
         self.cargo = 0
         return current_cargo
 
-class CargoOverload(Exception):
-    def __init__(self, message):
-        self.message = message
-
-    def __str__(self):
-        return self.message
-
-
 
