@@ -17,8 +17,11 @@ class NotEnoughFuel(Exception):
 
 
 class CargoOverload(Exception):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, message):
+        self.message = message
+
+    def __str__(self):
+        return self.message
 
 
 class VehicleNotStartedError(Exception):

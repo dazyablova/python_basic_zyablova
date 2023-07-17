@@ -25,3 +25,5 @@ class Plane(Vehicle):
         current_cargo = self.cargo
         self.cargo = 0
         return current_cargo
+
+
