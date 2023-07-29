@@ -1,11 +1,17 @@
-# docker run -p 8000:8000 myapp
+#  docker run -it -p 8000:8000 fastapi_app
 
 FROM python:3.9-buster
 
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8
+ENV PYTHONBUFFERED=1
 
-COPY ./app /app
+WORKDIR /fast_api_app
 
-RUN pip install --no-cache-dir -r /app/requirements.txt
+COPY fast_api_app/requirements.txt ./
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+RUN pip install -r requirements.txt
+
+COPY fast_api_app .
+
+EXPOSE 8000
+
+CMD ["uvicorn", "app:app", "--host=0.0.0.0" ,"--port=8000"]
