@@ -8,6 +8,7 @@
 создайте связи relationship между моделями: User.posts и Post.user
 """
 
+
 import os
 
 from sqlalchemy import (

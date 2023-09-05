@@ -12,6 +12,7 @@
   (используйте полученные из запроса данные, передайте их в функцию для добавления в БД)
 - закрытие соединения с БД
 """
+
 import asyncio
 from models import create_tables, fill_users_table, fill_posts_table
 from jsonplaceholder_requests import fetch_users, fetch_posts

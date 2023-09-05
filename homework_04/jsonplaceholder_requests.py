@@ -24,6 +24,7 @@ async def fetch_users():
             return users_data
 
 
+
 async def fetch_posts():
     async with aiohttp.ClientSession() as session:
         print(f"Task Posts getting data from URL: {POSTS_DATA_URL}")
