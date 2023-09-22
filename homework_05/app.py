@@ -2,7 +2,7 @@
 Домашнее задание №5
 Первое веб-приложение
 
-создайте базовое приложение на Flask
+создайте базовое приложение на flask
 создайте index view /
 добавьте страницу /about/, добавьте туда текст
 создайте базовый шаблон (используйте https://getbootstrap.com/docs/5.0/getting-started/introduction/#starter-template)
