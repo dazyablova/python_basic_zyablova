@@ -6,3 +6,15 @@
 - данные отображаются на страницах
 - есть кнопка для возвращения к списку
 - использованы ListView и DetailView
+
+
+##
+Кoманда для запуска
+../venv/Scripts/python.exe manage.py runserver  
+##
+
+##
+Для просмотра списка категорий
+http://localhost:8000/category/1/
+##
+
