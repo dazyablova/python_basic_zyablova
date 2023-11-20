@@ -1,0 +1,25 @@
+image: python:3.10
+
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - pip install -r requirements.txt
+    - python manage.py test
+
+auto_deploy_master:
+  stage: deploy
+  only:
+    - master
+  script:
+    - echo "Deploying to production"
+
+manual_deploy_mr:
+  stage: deploy
+  when: manual
+  only:
+    - merge_requests
+  script:
+    - echo "Deploying to staging"
